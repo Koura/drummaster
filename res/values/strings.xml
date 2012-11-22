@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MahouTaikoMaster</string>
+    <string name="game_name">魔法太鼓ﾏｽﾀ-</string>
+    <string name="menu_settings">Settings</string>
+    <string name="startinfo">タッチでスタート</string>
+
+</resources>
