@@ -3,7 +3,9 @@ package com.example.mahoutaikomaster;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.MotionEvent;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.TextView;
@@ -36,4 +38,10 @@ public class MenuActivity extends Activity {
 		return true;
 	}
 
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		Intent intent = new Intent(this, ModeMenuActivity.class);
+		startActivity(intent);
+		return true;
+	}
 }
