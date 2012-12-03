@@ -5,8 +5,8 @@
     tools:context=".ModeMenuActivity" >      
 
     <Button 
-        android:background="@drawable/blue_exit_btn"
-        style="@style/exit_btn"
+        android:background="@drawable/blue_small_btn"
+        style="@style/small_btn"
         android:text="@string/exit_button"
         android:onClick="exitGame"
         android:layout_alignParentRight="true"
@@ -19,7 +19,8 @@
         style="@style/main_menu"
         android:text="@string/scoreAttack"
         android:layout_toLeftOf="@+id/centerPoint"
-        android:layout_marginRight="10dip"
+        android:layout_marginRight="20dip"
+        android:onClick="levelSelect"
         />
     
     <TextView 
@@ -34,6 +35,6 @@
         style="@style/main_menu"
         android:text="@string/options"
         android:layout_toRightOf="@+id/centerPoint"
-        android:layout_marginLeft="10dip"
+        android:layout_marginLeft="20dip"
         />        
 </RelativeLayout>

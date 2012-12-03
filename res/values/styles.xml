@@ -25,7 +25,7 @@
         <item name="android:textSize">10sp</item>
     </style>
     
-    <style name="exit_btn" >
+    <style name="small_btn" >
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/menu_text_color</item>

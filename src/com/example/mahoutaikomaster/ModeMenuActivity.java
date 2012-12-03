@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 
@@ -40,5 +41,10 @@ public class ModeMenuActivity extends Activity {
 				}
 			})
 			.show();
+	}
+	
+	public void levelSelect(View view) {
+		Intent intent = new Intent(this, LevelSelectActivity.class);
+		startActivity(intent);
 	}
 }

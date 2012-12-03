@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LevelSelectActivity" >
+
+    <Button 
+        android:background="@drawable/blue_small_btn"
+        style="@style/small_btn"
+        android:text="@string/back"
+        android:onClick="previousMenu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+    
+    <ListView 
+        android:id="@+id/game_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="32dip"
+        />
+</RelativeLayout>

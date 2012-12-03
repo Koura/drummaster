@@ -12,5 +12,9 @@
     <string name="no">いいえ</string>
     <string name="options">オ\nプ\nシ\nョ\nン\n \n </string>
     <string name="scoreAttack">ス \nコ\nア\nア\nタ\nッ\nク</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_level_select">LevelSelectActivity</string>
+    <string name="back">Back</string>
+    <string name="title_activity_drum_game">DrumGameActivity</string>
 
 </resources>

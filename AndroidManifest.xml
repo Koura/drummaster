@@ -28,6 +28,16 @@
             android:label="@string/title_activity_mode_menu"
             android:screenOrientation="landscape" >
         </activity>
+        <activity
+            android:name="com.example.mahoutaikomaster.LevelSelectActivity"
+            android:label="@string/title_activity_level_select"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.mahoutaikomaster.DrumGameActivity"
+            android:label="@string/title_activity_drum_game"
+            android:screenOrientation="landscape" >
+        </activity>
     </application>
 
 </manifest>
