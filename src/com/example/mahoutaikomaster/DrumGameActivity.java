@@ -4,14 +4,16 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
-import android.widget.TextView;
 
 public class DrumGameActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_drum_game);
+		Intent intent = getIntent();
+		String song = intent.getStringExtra(LevelSelectActivity.LEVEL_NAME);
+
+		setContentView(new GameLevelPanel(this,song));
 		
 	}
 
