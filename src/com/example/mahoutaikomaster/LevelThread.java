@@ -48,23 +48,22 @@ public class LevelThread extends Thread{
 		Canvas canvas;
 		Log.d(TAG, "starting game loop");
 		initTimingElements();
-		
 		long beginTime;
 		long timeDiff;
 		int sleepTime;
 		int framesSkipped;
-		
+		this.gamePanel.initBackground();
+		this.gamePanel.setMaxX();
 		sleepTime = 0;
 		
 		while(running) {
 			canvas = null;
-			this.gamePanel.initBackground();
 			try{
 				canvas = this.surfaceHolder.lockCanvas();
 				synchronized(surfaceHolder) {
 					beginTime = System.currentTimeMillis();
 					framesSkipped = 0;
-					//this.gamePanel.update();
+					this.gamePanel.update(System.currentTimeMillis());
 					this.gamePanel.onDraw(canvas);
 					timeDiff = System.currentTimeMillis() - beginTime;
 					sleepTime = (int)(FRAME_PERIOD - timeDiff);
@@ -74,7 +73,7 @@ public class LevelThread extends Thread{
 						} catch(InterruptedException e) {}
 					}
 					while(sleepTime < 0 && framesSkipped < MAX_FRAME_SKIPS) {
-						//this.gamePanel.update();
+						this.gamePanel.update(System.currentTimeMillis());
 						sleepTime += FRAME_PERIOD;
 						framesSkipped++;
 					}
