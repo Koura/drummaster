@@ -18,7 +18,7 @@ public class TempoLine implements Note {
 	}
 	
 	public int getX() {
-		return x;
+		return this.x;
 	}
 
 	public void setX(int x) {
@@ -50,4 +50,15 @@ public class TempoLine implements Note {
 		canvas.drawLine(this.x, this.yTop, this.x, this.yBot, this.paint);
 	}
 	
+	public int getPoints() {
+		return 0;
+	}
+	
+	public boolean isDestroyable() {
+		return false;
+	}
+
+	public int getRadius() {
+		return 0;
+	}
 }

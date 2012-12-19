@@ -52,7 +52,7 @@ public class LevelThread extends Thread{
 		long timeDiff;
 		int sleepTime;
 		int framesSkipped;
-		this.gamePanel.initBackground();
+		this.gamePanel.init();
 		this.gamePanel.setMaxX();
 		sleepTime = 0;
 		

@@ -19,8 +19,7 @@ public class LevelSelectActivity extends Activity {
 		setContentView(R.layout.activity_level_select);
 		
 		listView = (ListView)findViewById(R.id.game_list);
-		String[] levels = new String[]{"Super Mario Bros", "Neon Genesis Evangelion", "Sonic", "Crash Bandicoot", "Super Monkey Ball", 
-				"Picmin"};
+		String[] levels = new String[]{"Sandbox", "Neon Genesis Evangelion"};
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, levels); 
 		listView.setAdapter(adapter);
 		

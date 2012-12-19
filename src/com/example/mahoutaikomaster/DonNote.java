@@ -32,5 +32,17 @@ public class DonNote implements Note{
 	public void move(int tempoSpeed) {
 		this.x -= tempoSpeed;
 	}
-
+	
+	public int getPoints() {
+		return 1;
+	}
+	
+	public boolean isDestroyable() {
+		return true;
+	}
+	@Override
+	public int getRadius() {
+		return this.radius;
+	}
+	
 }
